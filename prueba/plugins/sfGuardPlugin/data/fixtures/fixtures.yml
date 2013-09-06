@@ -1,0 +1,155 @@
+sfGuardUser:
+  admin:
+    username:       admin
+    password:       admin
+    is_super_admin: true
+  contabilidad01:
+    username:       contabilidad01
+    password:       contabilidad01
+    is_super_admin: false
+  contabilidad02:
+    username:       contabilidad02
+    password:       contabilidad02
+    is_super_admin: false
+  produccion01:
+    username:       produccion01
+    password:       produccion01
+    is_super_admin: false
+  produccion02:
+    username:       produccion02
+    password:       produccion02
+    is_super_admin: false
+  comercial01:
+    username:       comercial01
+    password:       comercial01
+    is_super_admin: false
+  comercial02:
+    username:       comercial02
+    password:       comercial02
+    is_super_admin: false
+  callcenter01:
+    username:       callcenter01
+    password:       callcenter01
+    is_super_admin: false
+  callcenter02:
+    username:       callcenter02
+    password:       callcenter02
+    is_super_admin: false
+    
+sfGuardPermission:
+  admin:
+    name:           admin
+    description:    Administrator permission
+  contabilidad:
+    name:           contabilidad
+    description:    contabilidad
+  produccion:
+    name:           produccion
+    description:    produccion
+  comercial:
+    name:           comercial
+    description:    comercial
+  callcenter:
+    name:           callcenter
+    description:    callcenter
+  pares:
+    name:           pares
+    description:    pares
+  impares:
+    name:           impares
+    description:    impares
+   
+sfGuardGroup:
+  contabilidad:
+    name:           contabilidad
+    description:    Grupo Contabilidad
+  produccion:
+    name:           produccion
+    description:    Grupo Producción
+  comercial:
+    name:           comercial
+    description:    Grupo Comercial
+  callcenter:
+    name: 			callcenter
+    description:	Grupo CallCenter
+  admin:
+    name:			admin
+    description:    Grupo Admin
+    
+sfGuardGroupPermission:
+  admin:
+    group_id:       admin
+    permission_id:  admin
+  contabilidad:
+    group_id:       contabilidad
+    permission_id:  contabilidad
+  produccion:
+    group_id:       produccion
+    permission_id:  produccion
+  comercial:
+    group_id:       comercial
+    permission_id:  comercial
+  callcenter:
+    group_id:       callcenter
+    permission_id:  callcenter
+
+sfGuardUserGroup:
+  admin:
+    group_id:       admin
+    user_id:        admin
+  contabilidad01:
+    group_id:       contabilidad
+    user_id:        contabilidad01
+  produccion01:
+    group_id:       produccion
+    user_id:        produccion01
+  comercial01:
+    group_id:       comercial
+    user_id:        comercial01
+  callcenter01:
+    group_id:       callcenter
+    user_id:        callcenter01
+  contabilidad02:
+    group_id:       contabilidad
+    user_id:        contabilidad02
+  produccion02:
+    group_id:       produccion
+    user_id:        produccion02
+  comercial02:
+    group_id:       comercial
+    user_id:        comercial02
+  callcenter02:
+    group_id:       callcenter
+    user_id:        callcenter02
+
+sfGuardUserPermission:
+  contabilidad01:
+    user_id:		contabilidad01
+    permission_id:  impares
+  contabilidad02:
+    user_id:		contabilidad02
+    permission_id:  pares
+  produccion01:
+    user_id:		produccion01
+    permission_id:  impares
+  produccion01_2:
+    user_id:		produccion01
+    permission_id:  pares
+  produccion02:
+    user_id:		produccion02
+    permission_id:  pares
+  comercial01:
+    user_id:		comercial01
+    permission_id:  impares
+  comercial02:
+    user_id:		comercial02
+    permission_id:  impares
+  comercial02_1:
+    user_id:		comercial02
+    permission_id:  pares
+  callcenter01:
+    user_id:		callcenter01
+    permission_id:  impares
+  callcenterl02:
+    user_id:		callcenter02
+    permission_id:  pares
